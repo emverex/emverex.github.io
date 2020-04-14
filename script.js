@@ -45,18 +45,3 @@ $(document).ready(function () {
             }
       })
 })
-
-
-
-window.onload = function () {
-      var anchors = document.getElementsByClassName('mov');
-      for (var i = 0; i < anchors.length; i++) {
-            var anchor = anchors[i];
-            anchor.onclick = function () {
-                  Swal.fire({
-                        icon: 'success',
-                        title: 'Download Generated.'
-                  })
-            }
-      }
-}
