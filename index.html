@@ -13,18 +13,26 @@
             document.addEventListener('contextmenu', event => event.preventDefault());
       </script>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
-      <link rel="preload" href="/img">
+      <link rel="preload" href="music/1.mp3" as="audio">
 </head>
 
 <body>
       <div class="sec-2" id="search-jump">
-            <div class="search-img"><img class="simg" src="img/search.png" alt=""></div> <input id="search"
-                  class="search-bar" placeholder="Search your next movie here ..." type="text" autocomplete="off"
+            <div id="audio" class="option-toggle-con" onclick="music()"><img id="audioi" class="simg"
+                        src="img/audio.png" alt="">
+            </div>
+            <div id="fhd" class="option-toggle-con" onclick="fhd()"><img id="fhdi" class="simg" src="img/fhd.png"
+                        alt=""></div>
+            <div id="stream" class="option-toggle-con" onclick="stream()"><img id="streami" class="simg"
+                        src="img/stream.png" alt="">
+            </div>
+            <input id="search" class="search-bar" placeholder="Search ..." type="text" autocomplete="off"
                   onclick="window.scrollTo(0,0)" oninput="window.scrollTo(0,0)"></input>
       </div>
-      <div class="sec-3">
+      <div class="sec-3" id="sec3">
             <div class="mov-head" id="movt">Suggestions</div>
-            <div class="mov-con" id="movc"> <a class="mov" mov-lang="ENG" mov-year="2020" onclick="redir()"
+            <div class="mov-con" id="movc">
+                  <a class="mov" mov-lang="ENG" mov-year="2020" onclick="redir()"
                         href="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/EZ6gLyvNILZNrRRUSSd6gl4BY1xJpqpbmhJItHtwnbeKXg?e=YjP6aF&download=1">
                         <img class="img" src="/img/moimg/25c.jpg" alt="Poster">
                         <p class="name">Onward</p>

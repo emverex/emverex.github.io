@@ -1,4 +1,4 @@
-{
+﻿{
 	"list": [
 		{
 			"name": "How to train your dragon: The Hidden World",
@@ -476,13 +476,7 @@
 			"lang": "ENG",
 			"play": "'https://jxjjxy-my.sharepoint.com/:v:/g/personal/dsznwgkc_m_mzr_me/Edm4LLaCge1KrvvkLl150cYBlT0ZpLHyO5NsUMzn3zDUIA?e=w2Ao37&download=1'"
 		},
-		{
-			"name": "Zootopia",
-			"img": "'/img/moimg/69c.jpg'",
-			"year": "2016",
-			"lang": "ENG",
-			"play": "'&download=1'"
-		},
+		{ "name": "Zootopia", "img": "'/img/moimg/69c.jpg'", "year": "2016", "lang": "ENG", "play": "'&download=1'" },
 		{
 			"name": "The Jungle Book",
 			"img": "'/img/moimg/70c.jpg'",
@@ -553,13 +547,7 @@
 			"lang": "ENG",
 			"play": "'&download=1'"
 		},
-		{
-			"name": "Your Name",
-			"img": "'/img/moimg/80c.jpg'",
-			"year": "2016",
-			"lang": "ENG",
-			"play": "'&download=1'"
-		},
+		{ "name": "Your Name", "img": "'/img/moimg/80c.jpg'", "year": "2016", "lang": "ENG", "play": "'&download=1'" },
 		{
 			"name": "A Silent Voice: The Movie",
 			"img": "'/img/moimg/81c.jpg'",
@@ -567,13 +555,7 @@
 			"lang": "ENG",
 			"play": "'&download=1'"
 		},
-		{
-			"name": "Storks",
-			"img": "'/img/moimg/82c.jpg'",
-			"year": "2016",
-			"lang": "ENG",
-			"play": "'&download=1'"
-		},
+		{ "name": "Storks", "img": "'/img/moimg/82c.jpg'", "year": "2016", "lang": "ENG", "play": "'&download=1'" },
 		{
 			"name": "My Life as a Zucchini",
 			"img": "'/img/moimg/83c.jpg'",
@@ -581,41 +563,11 @@
 			"lang": "ENG",
 			"play": "'&download=1'"
 		},
-		{
-			"name": "Trolls",
-			"img": "'/img/moimg/84c.jpg'",
-			"year": "2016",
-			"lang": "ENG",
-			"play": "'&download=1'"
-		},
-		{
-			"name": "Gantz: O",
-			"img": "'/img/moimg/85c.jpg'",
-			"year": "2016",
-			"lang": "ENG",
-			"play": "'&download=1'"
-		},
-		{
-			"name": "Sing",
-			"img": "'/img/moimg/86c.jpg'",
-			"year": "2016",
-			"lang": "ENG",
-			"play": "'&download=1'"
-		},
-		{
-			"name": "Moana",
-			"img": "'/img/moimg/87c.jpg'",
-			"year": "2016",
-			"lang": "ENG",
-			"play": "'&download=1'"
-		},
-		{
-			"name": "Leap!",
-			"img": "'/img/moimg/88c.jpg'",
-			"year": "2016",
-			"lang": "ENG",
-			"play": "'&download=1'"
-		},
+		{ "name": "Trolls", "img": "'/img/moimg/84c.jpg'", "year": "2016", "lang": "ENG", "play": "'&download=1'" },
+		{ "name": "Gantz: O", "img": "'/img/moimg/85c.jpg'", "year": "2016", "lang": "ENG", "play": "'&download=1'" },
+		{ "name": "Sing", "img": "'/img/moimg/86c.jpg'", "year": "2016", "lang": "ENG", "play": "'&download=1'" },
+		{ "name": "Moana", "img": "'/img/moimg/87c.jpg'", "year": "2016", "lang": "ENG", "play": "'&download=1'" },
+		{ "name": "Leap!", "img": "'/img/moimg/88c.jpg'", "year": "2016", "lang": "ENG", "play": "'&download=1'" },
 		{
 			"name": "Monster Trucks",
 			"img": "'/img/moimg/89c.jpg'",
@@ -645,7 +597,7 @@
 			"play": "'&download=1'"
 		},
 		{
-			"name": "Swift",
+			"name": "Manou the Swift",
 			"img": "'/img/moimg/93c.jpg'",
 			"year": "2019",
 			"lang": "ENG",
@@ -658,13 +610,7 @@
 			"lang": "ENG",
 			"play": "'&download=1'"
 		},
-		{
-			"name": "Away",
-			"img": "'/img/moimg/95c.jpg'",
-			"year": "2019",
-			"lang": "ENG",
-			"play": "'&download=1'"
-		},
+		{ "name": "Away", "img": "'/img/moimg/95c.jpg'", "year": "2019", "lang": "ENG", "play": "'&download=1'" },
 		{
 			"name": "White Snake",
 			"img": "'/img/moimg/96c.jpg'",
@@ -721,13 +667,7 @@
 			"lang": "ENG",
 			"play": "'&download=1'"
 		},
-		{
-			"name": "Ne Zha",
-			"img": "'/img/moimg/104c.jpg'",
-			"year": "2019",
-			"lang": "ENG",
-			"play": "'&download=1'"
-		},
+		{ "name": "Ne Zha", "img": "'/img/moimg/104c.jpg'", "year": "2019", "lang": "ENG", "play": "'&download=1'" },
 		{
 			"name": "Invader ZIM: Enter the Florpus",
 			"img": "'/img/moimg/105c.jpg'",
@@ -819,27 +759,9 @@
 			"lang": "ENG",
 			"play": "'&download=1'"
 		},
-		{
-			"name": "Astro Kid",
-			"img": "'/img/moimg/118c.jpg'",
-			"year": "2019",
-			"lang": "ENG",
-			"play": "'&download=1'"
-		},
-		{
-			"name": "Spycies",
-			"img": "'/img/moimg/119c.jpg'",
-			"year": "2019",
-			"lang": "ENG",
-			"play": "'&download=1'"
-		},
-		{
-			"name": "Trouble",
-			"img": "'/img/moimg/120c.jpg'",
-			"year": "2019",
-			"lang": "ENG",
-			"play": "'&download=1'"
-		},
+		{ "name": "Astro Kid", "img": "'/img/moimg/118c.jpg'", "year": "2019", "lang": "ENG", "play": "'&download=1'" },
+		{ "name": "Spycies", "img": "'/img/moimg/119c.jpg'", "year": "2020", "lang": "ENG", "play": "'&download=1'" },
+		{ "name": "Trouble", "img": "'/img/moimg/120c.jpg'", "year": "2019", "lang": "ENG", "play": "'&download=1'" },
 		{
 			"name": "Dragon Quest: Your Story",
 			"img": "'/img/moimg/121c.jpg'",
@@ -854,12 +776,6 @@
 			"lang": "ENG",
 			"play": "'&download=1'"
 		},
-		{
-			"name": "Mosley",
-			"img": "'/img/moimg/123c.jpg'",
-			"year": "2019",
-			"lang": "ENG",
-			"play": "'&download=1'"
-		}
+		{ "name": "Mosley", "img": "'/img/moimg/123c.jpg'", "year": "2019", "lang": "ENG", "play": "'&download=1'" }
 	]
 }
