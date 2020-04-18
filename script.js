@@ -135,7 +135,7 @@ function playnow(link) {
       document.getElementById('video-con-id').innerHTML =
             ' <video id="videoPlayer" preload="auto" width="320" class="video-js vjs-big-play-centered" controls data-setup="{}" ><source id="stream_link" src=' +
             link +
-            ' type="video/mp4" ></video><div class="close-vid" onclick="document.getElementById(&#39video-con-id&#39).style.display = &#39none&#39">EXIT</div>';
+            ' type="video/webm" ></video><div class="close-vid" onclick="document.getElementById(&#39video-con-id&#39).style.display = &#39none&#39">EXIT</div>';
       document.getElementById('video-con-id').style.display = 'flex';
 }
 
