@@ -1,60 +1,97 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Jumanji</title>
+      <title>Anymation Beta</title>
       <link rel="stylesheet" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js"></script>
+      <script src="script.js"></script>
       <script>
-            // document.addEventListener('contextmenu', event => event.preventDefault());
+            document.addEventListener('contextmenu', event => event.preventDefault());
       </script>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+      <link rel="preload" href="img/streamw.png" as="image">
+      <link rel="preload" href="img/fhdw.png" as="image">
+      <link rel="preload" href="img/audiow.png" as="image">
 </head>
 
 <body>
-      <div class="sec-0"></div>
-      <div class="main">
-            <div class="sec-1">
-
-                  <div class="thumb" allowfullscreen="allowfullscreen">
-                        <div class="thumb-holder"
-                              onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
-                              <div class="img1">
-                                    <img class="img1a"
-                                          src="https://image.tmdb.org/t/p/original/oLma4sWjqlXVr0E3jpaXQCytuG9.jpg"
-                                          style="cursor:pointer" />
-                                    <div class="overlay"></div>
-                                    <div class="play">► Watch Movie</div>
-                              </div>
-                              <img class="img2"
-                                    src="https://image.tmdb.org/t/p/original/7Jz9AxeC0n5PBBOqYXBmcclunqN.jpg">
-                        </div>
-                        <iframe src="https://drive.google.com/file/d/1p8886i-UscR9I8K0WR3F6HucE1UXF4zF/preview"
-                              height="100%" width="100%" allowfullscreen="allowfullscreen"></iframe>
-                        <div class="hide">
-                              &nbsp;</div>
-                  </div>
-
+      <iframe src="https://drive.google.com/file/d/10SZoZ8Y6zafN1kXq91IRrR3pBse_-dgL/preview" width="640" height="480"
+            allowfullscreen="allowfullscreen"></iframe>
+      <video src="https://drive.google.com/uc?export=download&id=1-Uk7M5Sj2Y0nTd-ffD8fiBAPWPuqt9sa" type='video/mp4'
+            controls></video>
+      <div class="sec-2" id="search-jump">
+            <div id="audio" class="option-toggle-con" onclick="music()"><img id="audioi" class="simg"
+                        src="img/audio.png" alt="">
             </div>
-            <div class="sec-2">
-                  <div class="name">Jumanji 2 : The Next Level</div>
-                  <div class="year">2019</div>
-                  <div class="gen">Action . Adventure . Funny</div>
-                  <div class="desc">The gang is back but the game has changed. As they return to Jumanji to rescue one
-                        of their own, they discover that nothing is as they expect. The players will have to brave parts
-                        unknown and unexplored, from the arid deserts to the snowy mountains, in order to escape the
-                        world's most dangerous game.</div>
+            <div id="fhd" class="option-toggle-con" onclick="fhd()"><img id="fhdi" class="simg" src="img/fhd.png"
+                        alt=""></div>
+            <div id="stream" class="option-toggle-con" onclick="stream()"><img id="streami" class="simg"
+                        src="img/stream.png" alt="">
             </div>
-            <div class="sec-3">
-                  <div class="trailer-txt">Trailers</div>
-                  <div class="trailer-sec">
-                        <img src="https://image.tmdb.org/t/p/original/noMvJUYVB9LUJClftPbQT78TUlQ.jpg" alt=""
-                              class="trailer-img">
-                        <img src="https://image.tmdb.org/t/p/original/n40GwQSajQKFlw1Wu0EnlaHCKSA.jpg" alt=""
-                              class="trailer-img">
-                  </div>
-            </div>
-            <div class="sec-4"></div>
+            <input id="search" class="search-bar" placeholder="Search ..." type="text" autocomplete="off"
+                  onclick="window.scrollTo(0,0)" oninput="window.scrollTo(0,0)"></input>
+      </div>
+      <div class="sec-3" id="sec3">
+            <div class="mov-head" id="movt">Suggestions</div>
+            <div class="mov-con" id="movc">
+                  <a class="mov" mov-lang="ENG" mov-year="2020" onclick="redir()"
+                        href="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/EZ6gLyvNILZNrRRUSSd6gl4BY1xJpqpbmhJItHtwnbeKXg?e=YjP6aF&download=1">
+                        <img class="img" src="/img/moimg/25c.jpg" alt="Poster">
+                        <p class="name">Onward</p>
+                  </a> <a
+                        href="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/EbK7lZL69C1IknEnvL58NtABhS380FTr6WLAO-a74sj4tA?e=OdTIVP&download=1"
+                        class="mov" mov-lang="ENG" mov-year="2020"> <img class="img" src="/img/moimg/24c.jpg"
+                              alt="Poster">
+                        <p class="name">Sonic the Hedgehog</p>
+                  </a> <a
+                        href="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/EVBeMMi4KsJGqGPFqLDlY1wBVOhmh96_JRjYhjKbq3_Ubg?e=lcKRav&download=1"
+                        class="mov" mov-lang="ENG" mov-year="2019"> <img class="img" src="/img/moimg/23c.jpg"
+                              alt="Poster">
+                        <p class="name">Spies in Disguise</p>
+                  </a> <a
+                        href="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/Ee2PTYjNY5VIrFr_6KS38WIBw6vFwyb7GCvhxLCuCaG4vg?e=W5SNmG&download=1"
+                        class="mov" mov-lang="ENG" mov-year="2019"> <img class="img" src="/img/moimg/22c.jpg"
+                              alt="Poster">
+                        <p class="name">Frozen 2</p>
+                  </a> <a
+                        href="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/ETJoqNgbLjFCmTYYWf5NuhcByWFnMvsSCF_08nTvkOp_xA?e=EJyvQG&download=1"
+                        class="mov" mov-lang="ENG" mov-year="2019"> <img class="img" src="/img/moimg/1c.jpg"
+                              alt="Poster">
+                        <p class="name">How to train your dragon: The Hidden World</p>
+                  </a> <a
+                        href="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/EcaKfVG49FZGgPR32yp-QFsBChs3ZApyJ4hbCDbZiS9rGA?e=DAAmky&download=1"
+                        class="mov" mov-lang="ENG" mov-year="2019"> <img class="img" src="/img/moimg/16c.jpg"
+                              alt="Poster">
+                        <p class="name">Abominable</p>
+                  </a> <a
+                        href="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/EWJLv4zt6J5MlE9ZLXXDBCQBrbweTba0_SB5CZwhZdI_Dw?e=gpI9m5&download=1"
+                        class="mov" mov-lang="ENG" mov-year="2019"> <img class="img" src="/img/moimg/13c.jpg"
+                              alt="Poster">
+                        <p class="name">The Angry Birds Movie 2</p>
+                  </a> <a
+                        href="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/ETz-GF7aibRPqa0ygCGcQncBKauI5IyXymvBW3UFjthRgQ?e=rRbD48&download=1"
+                        class="mov" mov-lang="ENG" mov-year="2019"> <img class="img" src="/img/moimg/11c.jpg"
+                              alt="Poster">
+                        <p class="name">The Lion King</p>
+                  </a> <a
+                        href="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/Ea1Cmy1DouJGjAHhxfTu3k0B5RMhTD7EOaq4SaX2-l_tdg?e=o34ego&download=1"
+                        class="mov" mov-lang="ENG" mov-year="2019"> <img class="img" src="/img/moimg/10c.jpg"
+                              alt="Poster">
+                        <p class="name">Toy Story 4</p>
+                  </a> <a
+                        href="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/Eemx_8Xfs_hGqNZbEyDGzEYBCX1tC8Zq5c0tTl_C--GJjA?e=Gyl18L&download=1"
+                        class="mov" mov-lang="ENG" mov-year="2019"> <img class="img" src="/img/moimg/9c.jpg"
+                              alt="Poster">
+                        <p class="name">The Secret Life of Pets 2</p>
+                  </a></div>
+      </div>
+      <div class="sec-4">
+            <div class="gap"></div>
+            <div class="gap2">Made with ♥ by hellowovi • Anymation Official 2020</div>
       </div>
 </body>
 
