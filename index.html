@@ -16,17 +16,16 @@
       <link rel="preload" href="img/streamw.png" as="image">
       <link rel="preload" href="img/fhdw.png" as="image">
       <link rel="preload" href="img/audiow.png" as="image">
-      <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />
+
 </head>
 
 <body>
-      <div class="vid-con">
-            <video id="videoPlayer" preload="auto" width="320" class="video-js vjs-big-play-centered" controls
-                  data-setup="{}">
-                  <source
-                        src="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/EVBeMMi4KsJGqGPFqLDlY1wBVOhmh96_JRjYhjKbq3_Ubg?e=lcKRav&download=1"
-                        type="video/mp4">
+      <div class="prompt" id="prompt">HD | Download</div>
+      <div id="video-con-id">
+            <video id="videoPlayer" preload="auto" width="320" controls>
+                  <source id="stream_link" src type="video/mp4">
             </video>
+            <div class="close-vid" onclick="document.getElementById('video-con-id').style.display = 'none'">EXIT</div>
       </div>
       <div class="sec-2" id="search-jump">
             <div id="audio" class="option-toggle-con" onclick="music()"><img id="audioi" class="simg"
@@ -43,7 +42,12 @@
       <div class="sec-3" id="sec3">
             <div class="mov-head" id="movt">Suggestions</div>
             <div class="mov-con" id="movc">
-                  <a class="mov" mov-lang="ENG" mov-year="2020" onclick="redir()"
+                  <a class="mov" mov-lang="ENG" mov-year="2020"
+                        href="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/EXkJfQunJxNIqJpbmJvIyCUBePmQOs7ZwKZ0vRQcdpZ2DQ?e=JlOv0u&download=1">
+                        <img class="img" src="/img/moimg/90c.jpg" alt="Poster">
+                        <p class="name">Trolls World Tour</p>
+                  </a>
+                  <a class="mov" mov-lang="ENG" mov-year="2020"
                         href="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/EZ6gLyvNILZNrRRUSSd6gl4BY1xJpqpbmhJItHtwnbeKXg?e=YjP6aF&download=1">
                         <img class="img" src="/img/moimg/25c.jpg" alt="Poster">
                         <p class="name">Onward</p>
@@ -98,7 +102,6 @@
             <div class="gap"></div>
             <div class="gap2">Made with ♥ by hellowovi • Anymation Official 2020</div>
       </div>
-      <script src="https://vjs.zencdn.net/7.7.5/video.js"></script>
 </body>
 
 </html>

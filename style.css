@@ -20,19 +20,49 @@ body {
       width: 0
 }
 
-.vid-con {
+.prompt {
+      width: auto;
+      height: auto;
+      background-color: rgb(35, 63, 219);
+      z-index: 56;
+      position: fixed;
+      padding: 3px 8px;
+      font-family: Inter, sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      color: white;
+      border-radius: 3px;
+      top: 15px;
+      left: 15px;
+}
+
+#video-con-id {
       z-index: 100;
       position: fixed;
       width: 100vw;
       height: 100vh;
       background-color: rgba(27, 27, 27, 0.74);
-      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      display: none;
+}
+
+.close-vid {
+      background-color: rgb(20, 20, 20);
+      margin-top: 30px;
+      padding: 10px 30px;
+      font-family: Inter, sans-serif;
+      font-weight: 500;
+      color: white;
+      border-radius: 5px;
+      font-size: 14px;
 }
 
 video {
       width: 95vw;
+      border: 5px solid rgb(10, 10, 10);
+      border-radius: 15px;
       height: auto;
       -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
             0 6px 6px rgba(0, 0, 0, .23);
