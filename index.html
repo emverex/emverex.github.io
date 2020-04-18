@@ -16,13 +16,18 @@
       <link rel="preload" href="img/streamw.png" as="image">
       <link rel="preload" href="img/fhdw.png" as="image">
       <link rel="preload" href="img/audiow.png" as="image">
+      <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />
 </head>
 
 <body>
-      <iframe src="https://drive.google.com/file/d/10SZoZ8Y6zafN1kXq91IRrR3pBse_-dgL/preview" width="640" height="480"
-            allowfullscreen="allowfullscreen"></iframe>
-      <video src="https://drive.google.com/uc?export=download&id=1-Uk7M5Sj2Y0nTd-ffD8fiBAPWPuqt9sa" type='video/mp4'
-            controls></video>
+      <div class="vid-con">
+            <video id="videoPlayer" preload="auto" width="320" class="video-js vjs-big-play-centered" controls
+                  data-setup="{}">
+                  <source
+                        src="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/EVBeMMi4KsJGqGPFqLDlY1wBVOhmh96_JRjYhjKbq3_Ubg?e=lcKRav&download=1"
+                        type="video/mp4">
+            </video>
+      </div>
       <div class="sec-2" id="search-jump">
             <div id="audio" class="option-toggle-con" onclick="music()"><img id="audioi" class="simg"
                         src="img/audio.png" alt="">
@@ -93,6 +98,7 @@
             <div class="gap"></div>
             <div class="gap2">Made with ♥ by hellowovi • Anymation Official 2020</div>
       </div>
+      <script src="https://vjs.zencdn.net/7.7.5/video.js"></script>
 </body>
 
 </html>

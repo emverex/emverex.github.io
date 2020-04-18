@@ -20,6 +20,35 @@ body {
       width: 0
 }
 
+.vid-con {
+      z-index: 100;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(27, 27, 27, 0.74);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+video {
+      width: 95vw;
+      height: auto;
+      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
+      -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
+      -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
+      -o-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
+
+      outline: none;
+}
+
+
 .sec-2 {
       width: 100vw;
       height: 10vh;
