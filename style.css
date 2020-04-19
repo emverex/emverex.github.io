@@ -36,8 +36,11 @@ body {
       left: 15px;
 }
 
-iframe {
-      display: none;
+#prac {
+      display: fixed;
+      background-color: white;
+      top: 50;
+      left: 50;
 }
 
 #video-con-id {
