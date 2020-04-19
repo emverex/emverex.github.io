@@ -36,6 +36,10 @@ body {
       left: 15px;
 }
 
+iframe {
+      display: none;
+}
+
 #video-con-id {
       z-index: 100;
       position: fixed;
