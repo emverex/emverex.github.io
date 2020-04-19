@@ -36,56 +36,6 @@ body {
       left: 15px;
 }
 
-#prac {
-      display: fixed;
-      background-color: white;
-      top: 50;
-      left: 50;
-}
-
-#video-con-id {
-      z-index: 100;
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(27, 27, 27, 0.74);
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      display: none;
-}
-
-.close-vid {
-      background-color: #E53935;
-      margin-top: 30px;
-      padding: 10px 30px;
-      font-family: Inter, sans-serif;
-      font-weight: 500;
-      color: white;
-      border-radius: 5px;
-      font-size: 14px;
-}
-
-video {
-      width: 95vw;
-      border: 5px solid rgb(10, 10, 10);
-      border-radius: 15px;
-      height: auto;
-      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
-            0 6px 6px rgba(0, 0, 0, .23);
-      -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
-            0 6px 6px rgba(0, 0, 0, .23);
-      -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
-            0 6px 6px rgba(0, 0, 0, .23);
-      -o-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
-            0 6px 6px rgba(0, 0, 0, .23);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
-            0 6px 6px rgba(0, 0, 0, .23);
-
-      outline: none;
-}
-
-
 .sec-2 {
       width: 100vw;
       height: 10vh;
