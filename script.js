@@ -157,10 +157,10 @@ $(document).ready(function () {
                                           searchResult[i].lang +
                                           ' mov-year=' +
                                           searchResult[i].year +
-                                          ' href=' +
+                                          ' href=&#39;' +
                                           brac +
                                           searchResult[i].play +
-                                          " ><img class='img' src=" +
+                                          "&#39; ><img class='img' src=" +
                                           searchResult[i].img +
                                           "alt='Movie Poster'><p class='name'>" +
                                           searchResult[i].name +
