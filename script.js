@@ -2,15 +2,7 @@ var listName = 'list.json';
 
 var quot = '';
 
-var iptrace;
 
-$.get('https://www.cloudflare.com/cdn-cgi/trace', function (data) {
-      iptrace = data.split('ip=')[1].split('ts=')[0];
-      document.querySelector('.project_txt').textContent = iptrace;
-      if (iptrace === '2409:4064:98d:e067:c9f5:11c9:a857:bec0') {
-            document.querySelector('.getout').style.display = 'none';
-      }
-})
 
 
 

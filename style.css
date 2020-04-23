@@ -321,16 +321,43 @@ body {
       overflow-x: scroll;
 }
 
-.pos-item:last-of-type {
-      margin-right: 30px;
-}
 
 .item-con {
       height: auto;
       min-width: 120px;
       margin-left: 30px;
-      margin-top: 20px;
+      margin-top: 25px;
+      margin-bottom: 40px;
+      position: relative;
+}
 
+.item-con::before {
+      content: attr(movname);
+      position: absolute;
+      font-family: Inter, sans-serif;
+      bottom: -18px;
+      color: rgb(228, 228, 228);
+      font-size: 13px;
+      font-weight: 500;
+      width: 120px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+}
+
+.item-con::after {
+      content: attr(movyear);
+      position: absolute;
+      font-family: sans-serif;
+      bottom: -31px;
+      left: 0;
+      color: rgb(182, 182, 182);
+      font-size: 10px;
+      font-weight: 500;
+      width: 120px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
 }
 
 .item-con>img {
@@ -354,4 +381,22 @@ body {
       margin-top: 20px;
       font-weight: 700;
       font-size: 18px;
+}
+
+.discover-sec {
+      background-color: #000000;
+      background-image: linear-gradient(315deg, #000000 0%, #161616 74%);
+      width: 100vw;
+      min-height: 100vh;
+      position: absolute;
+}
+
+.mardown {
+      height: 100px;
+      width: 100vw;
+}
+
+.marup {
+      height: 50px;
+      width: 100vw;
 }
