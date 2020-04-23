@@ -326,9 +326,9 @@ body {
 .item-con {
       height: auto;
       min-width: 120px;
-      margin-left: 30px;
+      margin-left: 20px;
       margin-top: 25px;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
       position: relative;
 }
 
@@ -378,7 +378,7 @@ body {
 .pos-txt {
       font-family: Inter, sans-serif;
       color: white;
-      margin-left: 30px;
+      margin-left: 20px;
       margin-top: 20px;
       font-weight: 700;
       font-size: 18px;
@@ -404,7 +404,7 @@ body {
 
 .item-ban {
       min-width: 260px;
-      margin-left: 30px;
+      margin-left: 20px;
       border-radius: 8px;
       -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
             0 6px 6px rgba(0, 0, 0, .23);
@@ -420,4 +420,8 @@ body {
 
 .item-ban>img {
       border-radius: 8px;
+}
+
+.fam {
+      margin-bottom: 50px;
 }
