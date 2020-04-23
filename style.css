@@ -316,15 +316,42 @@ body {
       display: none;
 }
 
-.getout {
-      height: 100vh;
-      width: 100vw;
-      background-color: rgb(24, 24, 24);
-      z-index: 500;
-      position: fixed;
+.pos-item {
       display: flex;
-      color: white;
+      overflow-x: scroll;
+}
+
+.pos-item:last-of-type {
+      margin-right: 30px;
+}
+
+.item-con {
+      height: auto;
+      min-width: 120px;
+      margin-left: 30px;
+      margin-top: 20px;
+
+}
+
+.item-con>img {
+      border-radius: 8px;
+      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
+      -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
+      -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
+      -o-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
+}
+
+.pos-txt {
       font-family: Inter, sans-serif;
-      justify-content: center;
-      align-items: center;
+      color: white;
+      margin-left: 30px;
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 18px;
 }
