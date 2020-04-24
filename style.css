@@ -425,3 +425,56 @@ body {
 .fam {
       margin-bottom: 50px;
 }
+
+.pop-box {
+      background-color: rgba(0, 0, 0, 0.842);
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      z-index: 500;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.pop-box>div {
+      width: 40vw;
+      height: 40px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      color: white;
+      font-family: Inter, sans-serif;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+}
+
+.pop-img {
+      height: 25px;
+      margin-right: 8px;
+      margin-left: 15px;
+}
+
+.pop-down {
+      background-color: rgb(58, 151, 34);
+}
+
+.pop-watch {
+      background-color: rgb(34, 151, 112);
+}
+
+.pop-trailer {
+      background-color: rgb(151, 34, 34);
+}
+
+.pop-info {
+      background-color: rgb(34, 65, 151);
+}
+
+.pop-exit {
+      background-color: rgb(34, 34, 34);
+}
