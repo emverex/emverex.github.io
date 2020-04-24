@@ -439,6 +439,7 @@ body {
       align-items: center;
 }
 
+/* 
 .pop-box>div {
       width: 40vw;
       height: 40px;
@@ -451,7 +452,7 @@ body {
       justify-content: flex-start;
       align-items: center;
 
-}
+} */
 
 .pop-img {
       height: 25px;
@@ -477,4 +478,33 @@ body {
 
 .pop-exit {
       background-color: rgb(34, 34, 34);
+}
+
+.carousel-item {
+      background-color: rgb(245, 245, 245);
+      padding: 30px;
+      border-radius: 12px;
+      min-height: 30vh;
+      position: relative;
+}
+
+.carousel {
+      transform: translateY(-70px);
+}
+
+.carousel-item::after {
+      content: attr(poptitle);
+      background-color: rgb(31, 31, 31);
+      position: absolute;
+      left: 50%;
+      width: 160px;
+      top: 155px;
+      transform: translate(-50%);
+      padding: 3px 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      border-radius: 50px;
+      color: white;
+      font-family: Iner, sans-serif;
 }

@@ -7,11 +7,12 @@
       <title>Anymation Beta</title>
       <link rel="stylesheet" href="style.css">
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
 <body>
       <div class="pop-box">
-            <div class="pop-down"><img class='pop-img' src="img/download.svg">
+            <!-- <div class="pop-down"><img class='pop-img' src="img/download.svg">
                   <div>Download</div>
             </div>
             <div class="pop-watch"><img class='pop-img' src="img/streaming.svg">
@@ -25,6 +26,21 @@
             </div>
             <div class="pop-exit"><img class='pop-img' src="img/logout.svg">
                   <div>Exit</div>
+            </div> -->
+
+            <div class="carousel">
+                  <div id="popdown" poptitle="Download" class="carousel-item">
+                        <img src="img/popdown.svg">
+                  </div>
+                  <div id="popwatch" poptitle="Watch Online" class="carousel-item">
+                        <img src="img/popwatch.svg">
+                  </div>
+                  <div id="poptrailer" poptitle="Watch Trailer" class="carousel-item">
+                        <img src="img/poptrailer.svg">
+                  </div>
+                  <div id="popinfo" poptitle="Movie Info" class="carousel-item">
+                        <img src="img/popinfo.svg">
+                  </div>
             </div>
       </div>
       <div class="main-bar">
@@ -160,7 +176,15 @@
       <script src="script.js"></script>
       <script>
             document.addEventListener('contextmenu', event => event.preventDefault());
+            $(document).ready(function () {
+                  $('.carousel').carousel();
+            });
+            document.addEventListener('DOMContentLoaded', function () {
+                  var elems = document.querySelectorAll('.carousel');
+                  var instances = M.Carousel.init(elems, options);
+            });
       </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>

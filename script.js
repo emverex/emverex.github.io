@@ -3,9 +3,6 @@ var listName = 'list.json';
 var quot = '';
 
 
-
-
-
 function search_now() {
       window.scrollTo(0, 0);
 }
