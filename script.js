@@ -5,9 +5,22 @@ function search_now() {
       window.scrollTo(0, 0);
 }
 
-function movclick() {
+function movclick(uname) {
+      var tid = uname.split('moimg/')[1].split('.jpg')[0];
+
+      var turl = document.querySelector('#t' + tid).getAttribute('downurl');
+      var ttrail = document.querySelector('#t' + tid).getAttribute('trailer');
+      var timdb = document.querySelector('#t' + tid).getAttribute('imdb');
+
+      document.querySelector('.pop-down').setAttribute('href', turl);
+      document.querySelector('.pop-watch').setAttribute('href', 'https://mostream.github.io/?s=~' +
+            turl);
+      document.querySelector('.pop-trailer').setAttribute('href', ttrail);
+      document.querySelector('.pop-info').setAttribute('href', timdb);
+
       document.querySelector('.pop-box').style.display = 'grid';
       document.querySelector('.pop-blank').style.display = 'block';
+
 }
 
 function popclose() {
@@ -91,13 +104,13 @@ $(document).ready(function () {
                               $('#movt').append('Search Results');
                               for (i = 0; i < searchResult.length; i++) {
                                     $('#movc').append(
-                                          "<a class='mov' mov-lang=" +
+                                          "<a class='mov' mov-year=" +
                                           searchResult[i].lang +
-                                          ' mov-year=' +
+                                          ' id="t' + searchResult[i].img.split('moimg/')[1].split('.jpg')[0] + '" mov-lang=' +
                                           searchResult[i].year +
-                                          ' onclick="movclick()" govind="' +
+                                          ' onclick="movclick(' + searchResult[i].img + ')" downurl="' +
                                           searchResult[i].play +
-                                          '" ><img class="img" src=' +
+                                          '" trailer="' + searchResult[i].trailer + '" imdb="' + searchResult[i].imdb + '" ><img class="img" src=' +
                                           searchResult[i].img +
                                           "alt='Movie Poster'><p class='name'>" +
                                           searchResult[i].name +
