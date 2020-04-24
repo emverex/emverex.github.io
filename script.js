@@ -26,6 +26,7 @@ function find_switch() {
       document.querySelector('.about-sec').style.display = 'none';
       document.querySelector('.discover-sec').style.display = 'none';
       document.querySelector('.search-sec').style.display = 'block';
+      document.getElementById("search").focus();
 }
 
 function panda_switch() {
@@ -51,7 +52,6 @@ var sug_var =
 //
 //
 //
-
 
 
 $(document).ready(function () {
