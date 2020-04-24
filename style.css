@@ -427,7 +427,7 @@ body {
 }
 
 .pop-box {
-      background-color: rgba(0, 0, 0, 0.842);
+      background-color: rgba(0, 0, 0, 0.74);
       width: 100vw;
       height: 100vh;
       position: fixed;
@@ -460,6 +460,7 @@ body {
       margin-left: 15px;
 }
 
+/* 
 .pop-down {
       background-color: rgb(58, 151, 34);
 }
@@ -478,11 +479,11 @@ body {
 
 .pop-exit {
       background-color: rgb(34, 34, 34);
-}
+} */
 
 .carousel-item {
       background-color: rgb(245, 245, 245);
-      padding: 30px;
+      padding: 50px 25px;
       border-radius: 12px;
       min-height: 300px;
       position: relative;
@@ -491,7 +492,6 @@ body {
 
 .carousel {
       transform: translateY(-70px);
-      transform: translateX(-25%);
 }
 
 .carousel-item::after {
