@@ -1,11 +1,20 @@
 var listName = 'list.json';
 
-var quot = '';
-
 
 function search_now() {
       window.scrollTo(0, 0);
 }
+
+function movclick() {
+      document.querySelector('.pop-box').style.display = 'grid';
+      document.querySelector('.pop-blank').style.display = 'block';
+}
+
+function popclose() {
+      document.querySelector('.pop-box').style.display = 'none';
+      document.querySelector('.pop-blank').style.display = 'none';
+}
+
 
 function home_switch() {
       document.querySelector('.home-bar').setAttribute('src', 'img/homew.svg');
@@ -86,10 +95,9 @@ $(document).ready(function () {
                                           searchResult[i].lang +
                                           ' mov-year=' +
                                           searchResult[i].year +
-                                          ' href=' + quot +
-                                          brac +
+                                          ' onclick="movclick()" govind="' +
                                           searchResult[i].play +
-                                          quot + " ><img class='img' src=" +
+                                          '" ><img class="img" src=' +
                                           searchResult[i].img +
                                           "alt='Movie Poster'><p class='name'>" +
                                           searchResult[i].name +
