@@ -124,6 +124,7 @@ body {
       border: none;
       outline: none;
       padding: 0 20px;
+      padding-right: 38px;
       color: rgb(179, 179, 179);
       font-family: Inter, sans-serif;
       font-size: 16px;
@@ -557,6 +558,6 @@ body {
 .close {
       position: absolute;
       right: 11vw;
-      height: 18px;
+      height: 16px;
       display: none;
 }
