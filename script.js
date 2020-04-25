@@ -5,6 +5,14 @@ function search_now() {
       window.scrollTo(0, 0);
 }
 
+function btnpop() {
+      if (document.querySelector('#search').value == '') {
+            document.querySelector('.close').style.display = 'none';
+      } else {
+            document.querySelector('.close').style.display = 'block';
+      }
+}
+
 function movclick(uname) {
       var tid = uname.split('moimg/')[1].split('.jpg')[0];
 
