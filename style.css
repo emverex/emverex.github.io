@@ -437,7 +437,7 @@ body {
       height: 32vh;
       position: fixed;
       bottom: 0;
-      z-index: 500;
+      z-index: 1000;
       box-shadow: 0 -5px 35px -5px rgb(0, 0, 0);
 
       border-top-left-radius: 20px;
@@ -455,7 +455,7 @@ body {
 .pop-blank {
       width: 100vw;
       height: 90vh;
-      z-index: 499;
+      z-index: 999;
       background-color: rgba(0, 0, 0, 0.349);
       position: fixed;
       top: 0;
