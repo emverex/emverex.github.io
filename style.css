@@ -331,7 +331,10 @@ body {
       margin-top: 25px;
       margin-bottom: 60px;
       position: relative;
+      display: flex;
+      align-items: center;
 }
+
 
 .item-con::before {
       content: attr(movname);
@@ -560,4 +563,38 @@ body {
       right: 11vw;
       height: 16px;
       display: none;
+}
+
+#moreali::after {
+      content: 'more';
+      top: 35%;
+      left: 15px;
+      background-color: #7f53ac;
+      background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+      height: 25px;
+      width: 70px;
+      border-radius: 50px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 700;
+}
+
+#moreali::before {
+      content: 'watch more content like this';
+      top: 45%;
+      left: 11px;
+      height: 65px;
+      width: 80px;
+      border-radius: 50px;
+      color: rgb(65, 65, 65);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 9px;
+      font-weight: 500;
+      white-space: pre-wrap;
+      text-align: center;
 }

@@ -16,6 +16,7 @@ function search_now() {
 function txtclear() {
       document.querySelector('#search').value = '';
       document.getElementById("search").focus();
+      document.querySelector('.close').style.display = 'none';
 }
 
 function movclick(uname) {
