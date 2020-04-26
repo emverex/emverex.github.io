@@ -14,6 +14,12 @@
 </head>
 
 <body>
+      <div class="backswipe animated slideInRight" swipetitle="Newly Added" onclick="swipeexit()"><img
+                  src="img/back.svg"></div>
+      <div class="movswipe animated slideInRight">
+            <div class="swipecont">
+            </div>
+      </div>
       <div class="pop-blank animated fadeIn" onclick="popclose()"></div>
       <div class="pop-box animated slideInUp">
             <a class="pop-down" href="#">
@@ -97,7 +103,7 @@
                         imdb="https://www.imdb.com/title/tt0472033/?ref_=fn_al_tt_1"
                         onclick="movclick('/img/moimg/211c.jpg')" id="t211c" class="item-con" movname="9"
                         movyear="2009"><img src="/img/moimg/211c.jpg"></div>
-                  <div class="item-con" id="moreali"></div>
+                  <div class="item-con" id="moreali" onclick="morepop()"></div>
             </div>
             <div class="pos-txt">Most Popular</div>
             <div class="pos-item">
@@ -263,7 +269,7 @@
                   <img class="close" src="img/close.svg" onclick="txtclear()">
             </div>
       </div>
-
+      <script src="cont.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js"></script>
       <script src="script.js"></script>
