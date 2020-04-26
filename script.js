@@ -6,7 +6,7 @@ function morepop() {
       document.querySelector('.backswipe').style.display = 'flex';
       document.querySelector('.swipecont').innerHTML = '';
       for (var u in getmov) {
-            document.querySelector('.swipecont').innerHTML += '<div class="swipeitem" movsname="' + getmov[u].name + '" movsyear="' + getmov[u].year + '" downurl="' + getmov[u].play + '" trailer="' + getmov[u].trailer + '" imdb="' + getmov[u].imdb + '" id="t' + getmov[u].img.split('moimg/')[1].split('.jpg')[0] + '"><img src=' + getmov[u].img + ' ></div>';
+            document.querySelector('.swipecont').innerHTML += '<div class="swipeitem" movsname="' + getmov[u].name + '" movsyear="' + getmov[u].year + '" downurl="' + getmov[u].play + '" trailer="' + getmov[u].trailer + '" imdb="' + getmov[u].imdb + '" id="t' + getmov[u].img.split('moimg/')[1].split('.jpg')[0] + '"><img class="lazyload" data-src=' + getmov[u].img + ' ></div>';
       }
 }
 
