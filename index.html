@@ -25,7 +25,7 @@
             <a class="pop-down" href="#">
                   <div>Download</div>
             </a>
-            <a class="pop-watch" href="#">
+            <a class="pop-watch" onclick="">
                   <div>Watch Online</div>
             </a>
             <a class="pop-trailer" href="#">
@@ -103,7 +103,7 @@
                         imdb="https://www.imdb.com/title/tt0472033/?ref_=fn_al_tt_1"
                         onclick="movclick('/img/moimg/211c.jpg')" id="t211c" class="item-con" movname="9"
                         movyear="2009"><img src="/img/moimg/211c.jpg"></div>
-                  <div class="item-con" id="moreali" onclick="morepop()"></div>
+                  <div class="item-con" id="moreali" onclick="morepop_newly_added()"></div>
             </div>
             <div class="pos-txt">Most Popular</div>
             <div class="pos-item">
@@ -137,7 +137,7 @@
                         imdb="https://www.imdb.com/title/tt2096673/?ref_=nv_sr_srsg_0"
                         onclick="movclick('/img/moimg/128c.jpg')" id="t128c" class="item-con" movname="Inside Out"
                         movyear="2015"><img src="/img/moimg/128c.jpg"></div>
-                  <div class="item-con" id="moreali"></div>
+                  <div class="item-con" id="moreali" onclick="morepop_most_popular()"></div>
             </div>
             <div class="pos-txt">Disney's Animation</div>
             <div class="pos-item">
@@ -170,7 +170,7 @@
                         trailer="https://www.youtube.com/watch?v=wmiIUN-7qhE"
                         imdb="https://www.imdb.com/title/tt1979376/" onclick="movclick('/img/moimg/10c.jpg')" id="t10c"
                         class="item-con" movname="Toy Story 4" movyear="2019"><img src="/img/moimg/10c.jpg"></div>
-                  <div class="item-con" id="moreali"></div>
+                  <div class="item-con" id="moreali" onclick="morepop_disney_animation()"></div>
             </div>
             <div class="mardown"></div>
       </div>
@@ -178,7 +178,7 @@
             <div class="sec-3" id="sec3">
                   <div class="mov-head" id="movt">Suggestions</div>
                   <div class="mov-con" id="movc">
-                        <a class="mov" mov-lang="2020" mov-year="DEF-HD"
+                        <a class="mov" mov-year="2020-HD" mov-lang="ENG/DEF"
                               trailer="https://www.youtube.com/watch?v=JPzmECxyp_8"
                               imdb="https://www.imdb.com/title/tt6587640/?ref_=nv_sr_srsg_0"
                               onclick="movclick('/img/moimg/90c.jpg')" id="t90c"
@@ -186,7 +186,7 @@
                               <img class="img" src="/img/moimg/90c.jpg" alt="Poster">
                               <p class="name">Trolls World Tour</p>
                         </a>
-                        <a class="mov" mov-lang="2020" mov-year="DEF-HD"
+                        <a class="mov" mov-year="2020-HD" mov-lang="ENG/DEF"
                               trailer="https://www.youtube.com/watch?v=gn5QmllRCn4"
                               imdb="https://www.imdb.com/title/tt7146812/?ref_=fn_tt_tt_1"
                               onclick="movclick('/img/moimg/25c.jpg')" id="t25c"
@@ -195,7 +195,7 @@
                               <p class="name">Onward</p>
                         </a> <a
                               downurl="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/EbK7lZL69C1IknEnvL58NtABhS380FTr6WLAO-a74sj4tA?e=OdTIVP&download=1"
-                              class="mov" mov-lang="2020" mov-year="DEF-HD"
+                              class="mov" mov-year="2020-HD" mov-lang="ENG/DEF"
                               trailer="https://www.youtube.com/watch?v=szby7ZHLnkA"
                               imdb="https://www.imdb.com/title/tt3794354/?ref_=fn_ft_tt_1"
                               onclick="movclick('/img/moimg/24c.jpg')" id="t24c"> <img class="img"
@@ -203,56 +203,56 @@
                               <p class="name">Sonic the Hedgehog</p>
                         </a> <a
                               downurl="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/EVBeMMi4KsJGqGPFqLDlY1wBVOhmh96_JRjYhjKbq3_Ubg?e=lcKRav&download=1"
-                              class="mov" mov-lang="2019" mov-year="DEF-HD"
+                              class="mov" mov-year="2019-HD" mov-lang="ENG/DEF"
                               trailer="https://www.youtube.com/watch?v=A05s7OM-8Oc"
                               imdb="https://www.imdb.com/title/tt5814534/" onclick="movclick('/img/moimg/23c.jpg')"
                               id="t23c"> <img class="img" src="/img/moimg/23c.jpg" alt="Poster">
                               <p class="name">Spies in Disguise</p>
                         </a> <a
                               downurl="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/Ee2PTYjNY5VIrFr_6KS38WIBw6vFwyb7GCvhxLCuCaG4vg?e=W5SNmG&download=1"
-                              class="mov" mov-lang="2019" mov-year="DEF-HD"
+                              class="mov" mov-year="2019-HD" mov-lang="ENG/DEF"
                               trailer="https://www.youtube.com/watch?v=Zi4LMpSDccc"
                               imdb="https://www.imdb.com/title/tt4520988/" onclick="movclick('/img/moimg/22c.jpg')"
                               id="t22c"> <img class="img" src="/img/moimg/22c.jpg" alt="Poster">
                               <p class="name">Frozen 2</p>
                         </a> <a
                               downurl="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/ETJoqNgbLjFCmTYYWf5NuhcByWFnMvsSCF_08nTvkOp_xA?e=EJyvQG&download=1"
-                              class="mov" mov-lang="2019" mov-year="DEF-HD"
+                              class="mov" mov-year="2019-HD" mov-lang="ENG/DEF"
                               trailer="https://www.youtube.com/watch?v=SkcucKDrbOI"
                               imdb="https://www.imdb.com/title/tt0892769/" onclick="movclick('/img/moimg/1c.jpg')"
                               id="t1c"> <img class="img" src="/img/moimg/1c.jpg" alt="Poster">
                               <p class="name">How to train your dragon: The Hidden World</p>
                         </a> <a
                               downurl="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/EcaKfVG49FZGgPR32yp-QFsBChs3ZApyJ4hbCDbZiS9rGA?e=DAAmky&download=1"
-                              class="mov" mov-lang="2019" mov-year="DEF-HD"
+                              class="mov" mov-year="2019-HD" mov-lang="ENG/DEF"
                               trailer="https://www.youtube.com/watch?v=XrgVtuDRBjM"
                               imdb="https://www.imdb.com/title/tt6324278/" onclick="movclick('/img/moimg/16c.jpg')"
                               id="t16c"> <img class="img" src="/img/moimg/16c.jpg" alt="Poster">
                               <p class="name">Abominable</p>
                         </a> <a
                               downurl="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/EWJLv4zt6J5MlE9ZLXXDBCQBrbweTba0_SB5CZwhZdI_Dw?e=gpI9m5&download=1"
-                              class="mov" mov-lang="2019" mov-year="DEF-HD"
+                              class="mov" mov-year="2019-HD" mov-lang="ENG/DEF"
                               trailer="https://www.youtube.com/watch?v=RSKQ-lVsMdg"
                               imdb="https://www.imdb.com/title/tt6095472/" onclick="movclick('/img/moimg/13c.jpg')"
                               id="t13c"> <img class="img" src="/img/moimg/13c.jpg" alt="Poster">
                               <p class="name">The Angry Birds Movie 2</p>
                         </a> <a
                               downurl="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/ETz-GF7aibRPqa0ygCGcQncBKauI5IyXymvBW3UFjthRgQ?e=rRbD48&download=1"
-                              class="mov" mov-lang="2019" mov-year="DEF-HD"
+                              class="mov" mov-year="2019-HD" mov-lang="ENG/DEF"
                               trailer="https://www.youtube.com/watch?v=7TavVZMewpY"
                               imdb="https://www.imdb.com/title/tt6105098/" onclick="movclick('/img/moimg/11c.jpg')"
                               id="t11c"> <img class="img" src="/img/moimg/11c.jpg" alt="Poster">
                               <p class="name">The Lion King</p>
                         </a> <a
                               downurl="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/Ea1Cmy1DouJGjAHhxfTu3k0B5RMhTD7EOaq4SaX2-l_tdg?e=o34ego&download=1"
-                              class="mov" mov-lang="2019" mov-year="DEF-HD"
+                              class="mov" mov-year="2019-HD" mov-lang="ENG/DEF"
                               trailer="https://www.youtube.com/watch?v=wmiIUN-7qhE"
                               imdb="https://www.imdb.com/title/tt1979376/" onclick="movclick('/img/moimg/10c.jpg')"
                               id="t10c"> <img class="img" src="/img/moimg/10c.jpg" alt="Poster">
                               <p class="name">Toy Story 4</p>
                         </a> <a
                               downurl="https://jxjjxy-my.sharepoint.com/:u:/g/personal/dsznwgkc_m_mzr_me/Eemx_8Xfs_hGqNZbEyDGzEYBCX1tC8Zq5c0tTl_C--GJjA?e=Gyl18L&download=1"
-                              class="mov" mov-lang="2019" mov-year="DEF-HD"
+                              class="mov" mov-year="2019-HD" mov-lang="ENG/DEF"
                               trailer="https://www.youtube.com/watch?v=mYocfuqu2A8"
                               imdb="https://www.imdb.com/title/tt5113040/" onclick="movclick('/img/moimg/9c.jpg')"
                               id="t9c"> <img class="img" src="/img/moimg/9c.jpg" alt="Poster">
