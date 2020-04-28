@@ -63,7 +63,7 @@ function movclick(uname) {
 
       document.querySelector('.pop-down').setAttribute('href', turl);
       document.querySelector('.pop-watch').setAttribute('onclick', 'watchnow("' + turl + '")');
-      document.querySelector('.pop-trailer').setAttribute('href', ttrail);
+      document.querySelector('.pop-trailer').setAttribute('onclick', 'trailnow("' + ttrail + '")');
       document.querySelector('.pop-info').setAttribute('href', timdb);
 
       document.querySelector('.pop-box').style.display = 'grid';
@@ -73,6 +73,10 @@ function movclick(uname) {
 
 function watchnow(popu) {
       console.log(popu);
+}
+
+function trailnow(popt) {
+      console.log(popt);
 }
 
 function popclose() {
