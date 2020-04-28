@@ -64,7 +64,7 @@ function movclick(uname) {
       document.querySelector('.pop-down').setAttribute('href', turl);
       document.querySelector('.pop-watch').setAttribute('onclick', 'watchnow("' + turl + '")');
       document.querySelector('.pop-trailer').setAttribute('onclick', 'trailnow("' + ttrail + '")');
-      document.querySelector('.pop-info').setAttribute('href', 'infonow("' + timdb + '")');
+      document.querySelector('.pop-info').setAttribute('onclick', 'infonow("' + timdb + '")');
 
       document.querySelector('.pop-box').style.display = 'grid';
       document.querySelector('.pop-blank').style.display = 'block';
