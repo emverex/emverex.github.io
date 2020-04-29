@@ -714,7 +714,7 @@ body {
 }
 
 .nav {
-      width: 100vw;
+      min-width: 100vw;
       display: flex;
       justify-content: flex-start;
       align-items: flex-end;
@@ -722,13 +722,15 @@ body {
       top: 0px;
       z-index: 10;
       background-color: rgb(13, 13, 13);
+      overflow-y: scroll;
 }
 
 .nav>* {
       color: rgb(63, 63, 63);
       font-size: 30px;
       font-family: lin, sans-serif;
-      padding: 20px 5px 20px 20px;
+      padding: 20px 5px 20px 15px;
+      white-space: nowrap;
 }
 
 .nav-item1 {
@@ -764,10 +766,45 @@ body {
       margin-left: 4vw;
       margin-top: 25px;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 15px;
+      grid-gap: 10px;
       margin-bottom: 100px;
 }
 
-.nav-con>img {
-      border-radius: 8px;
+.nav-con>div {
+      border-radius: 5px;
+}
+
+.pumpo {
+      position: relative;
+}
+
+.nav-con>div>img {
+      border-radius: 5px;
+}
+
+.pumpo::after {
+      content: 'HD';
+      color: rgb(27, 27, 27);
+      background-color: white;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 100;
+      padding: 1.5px 6px;
+      font-size: 12px;
+      font-family: lin;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
+      -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
+      -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
+      -o-box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .19),
+            0 6px 6px rgba(0, 0, 0, .23);
 }
