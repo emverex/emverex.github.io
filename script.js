@@ -3,6 +3,22 @@ var sug_var = '<a class="mov" mov-year="2020-HD" mov-lang="ENG/DEF" trailer="htt
 
 var new_added_no = (Object.keys(mov_newly_added).length - 1);
 
+
+
+const interval = setInterval(function greet() {
+      var today = new Date();
+      var time = today.getHours();
+      if (time > 4 && time < 12) {
+            document.querySelector('.marup').innerHTML = 'Good Morning';
+      } else if (time > 11 && time < 17) {
+            document.querySelector('.marup').innerHTML = 'Good Afternoon';
+      } else {
+            document.querySelector('.marup').innerHTML = 'Good Evening';
+      }
+
+}, 1000);
+
+
 function morepop_newly_added() {
       document.querySelector('.movswipe').style.display = 'inline-block';
       document.querySelector('.backswipe').style.display = 'flex';
