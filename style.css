@@ -13,10 +13,11 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
-	background-color: #121212;
+	background-color: rgb(13, 13, 13);
 	scroll-snap-type: y mandatory;
 	overflow-y: auto;
 }
@@ -663,7 +664,6 @@ body {
 	width: 100vw;
 	background-color: rgb(13, 13, 13);
 	min-height: 100vh;
-	position: absolute;
 }
 
 .pre > img {
@@ -680,11 +680,10 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-end;
-	position: sticky;
+	position: fixed;
 	top: 0px;
 	z-index: 10;
 	background-color: rgb(13, 13, 13);
-	overflow-y: scroll;
 }
 
 .nav > * {
@@ -702,9 +701,8 @@ body {
 
 .nav-banner {
 	display: flex;
-	width: 92vw;
-	margin-left: 4vw;
-	margin-top: 25px;
+	width: 100vw;
+	margin-top: 90px;
 	position: relative;
 }
 
@@ -715,7 +713,7 @@ body {
 	position: absolute;
 	border-radius: 15px;
 	color: white;
-	top: 65%;
+	top: 55%;
 	left: 20px;
 	font-family: lin, sans-serif;
 	font-size: 6.5vw;
@@ -728,14 +726,10 @@ body {
 	position: absolute;
 	border-radius: 15px;
 	color: rgb(201, 201, 201);
-	top: 80%;
+	top: 70%;
 	left: 20px;
 	font-family: lin, sans-serif;
 	font-size: 3vw;
-}
-
-.nav-banner > span > img {
-	border-radius: 15px;
 }
 
 #play-ban::before {
@@ -757,17 +751,29 @@ body {
 }
 
 .nav-con {
-	width: 92vw;
+	width: 98vw;
 	display: grid;
-	margin-left: 4vw;
-	margin-top: 25px;
+	margin-left: 1vw;
+	margin-top: 30px;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 10px;
+	grid-column-gap: 3.5px;
 	margin-bottom: 100px;
+	position: relative;
+}
+
+.nav-con::before {
+	content: 'Newly Updated';
+	position: absolute;
+	color: white;
+	top: -25px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 12px;
+	font-family: Inter;
 }
 
 .nav-con > div {
-	border-radius: 5px;
+	border-radius: 3px;
 }
 
 .pumpo {
@@ -775,7 +781,7 @@ body {
 }
 
 .nav-con > div > img {
-	border-radius: 5px;
+	border-radius: 3px;
 }
 
 .pumpo::after {
@@ -783,13 +789,35 @@ body {
 	color: rgb(27, 27, 27);
 	background-color: white;
 	position: absolute;
+	top: 25px;
+	left: 5px;
+	z-index: 5;
+	padding: 1.5px 4px;
+	font-size: 8px;
+	font-family: lin;
+	border-radius: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+	-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+	-ms-box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+	-o-box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+}
+
+.pumpo::before {
+	content: '2019';
+	color: rgb(255, 255, 255);
+	background-color: rgb(43, 28, 184);
+	position: absolute;
 	top: 10px;
-	right: 10px;
+	left: 5px;
 	z-index: 5;
 	padding: 1.5px 6px;
-	font-size: 10px;
+	font-size: 8px;
 	font-family: lin;
-	border-radius: 4px;
+	border-radius: 2px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -829,7 +857,7 @@ body {
 
 .nav-item3:hover::before {
 	content: '';
-	height: 3px;
+	height: 2px;
 	width: 152px;
 	background-color: rgb(255, 70, 70);
 	left: 120px;
