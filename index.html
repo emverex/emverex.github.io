@@ -17,12 +17,14 @@
 <body>
       <div class="trend">
             <div class="nav">
-                  <div class="nav-item1">Latest</div>
-                  <div class="nav-item2">Trending</div>
-                  <div class="nav-item3">Top Rated</div>
+                  <div class="nav-item1" onclick="switchnew()">Latest</div>
+                  <div class="nav-item3" onclick="switchrated()">Top Rated</div>
             </div>
             <div class="nav-banner">
-                  <img src="https://image.tmdb.org/t/p/w500/zhk8smtKHAkUPziVWWjZsKueTiF.jpg">
+                  <span id="play-ban">
+                        <img class="ban_img" src="img/ban/latest.jpg">
+                  </span>
+
             </div>
             <div class="nav-con">
                   <div class="pumpo"><img src="img/moimg/19c.jpg" alt=""></div>

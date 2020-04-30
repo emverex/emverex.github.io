@@ -4,6 +4,22 @@ var sug_var = '<a class="mov" mov-year="2020-HD" mov-lang="ENG/DEF" trailer="htt
 var new_added_no = (Object.keys(mov_newly_added).length - 1);
 
 
+function switchnew() {
+      document.querySelector('.ban_img').setAttribute('src', 'img/ban/latest.jpg');
+      document.querySelector('.nav-item1').style.color = 'white';
+      document.querySelector('.nav-item1').style.fontSize = '31px';
+      document.querySelector('.nav-item3').style.color = 'rgb(63, 63, 63)';
+      document.querySelector('.nav-item3').style.fontSize = '30px';
+}
+
+function switchrated() {
+      document.querySelector('.ban_img').setAttribute('src', 'img/ban/trending.jpg');
+      document.querySelector('.nav-item1').style.color = 'rgb(63, 63, 63)';
+      document.querySelector('.nav-item1').style.fontSize = '30px';
+      document.querySelector('.nav-item3').style.color = 'white';
+      document.querySelector('.nav-item3').style.fontSize = '31px';
+}
+
 
 const interval = setInterval(function greet() {
       var today = new Date();
