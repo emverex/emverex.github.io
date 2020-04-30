@@ -683,7 +683,7 @@ body {
 	position: fixed;
 	top: 0px;
 	z-index: 10;
-	background-color: rgb(13, 13, 13);
+	background-color: rgba(13, 13, 13, 0.815);
 }
 
 .nav > * {
@@ -751,9 +751,8 @@ body {
 }
 
 .nav-con {
-	width: 98vw;
+	width: 100vw;
 	display: grid;
-	margin-left: 1vw;
 	margin-top: 30px;
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 3.5px;
@@ -778,10 +777,6 @@ body {
 
 .pumpo {
 	position: relative;
-}
-
-.nav-con > div > img {
-	border-radius: 3px;
 }
 
 .pumpo::after {
