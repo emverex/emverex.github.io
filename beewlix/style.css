@@ -1,22 +1,26 @@
 /* Variables */
 
 :root {
-      --main-color: #fdf7f9;
-      --body-back: linear-gradient(315deg, #e58c8a 0%, #eec0c6 74%);
-      --body-color: #eec0c6;
+      --main-color: #D0CECE;
+      --body-back: #000000;
+      --body-color: #000000;
       --logo-txt-color: rgb(199, 133, 133);
       --search-back-color: #ebe9ec;
-      --search-txt-color: rgb(136, 136, 136);
-      --mov-title-color: white;
+      --search-txt-color: rgb(218, 218, 218);
+      --pop-color: white;
+      --main-strip-color: rgb(39, 39, 39);
 }
-
-
 
 /* Pre-stuffs */
 
 @font-face {
       font-family: arci;
       src: url(Arciform.otf);
+}
+
+@font-face {
+      font-family: nun;
+      src: url(Nunito-Regular.ttf);
 }
 
 * {
@@ -27,15 +31,22 @@
 }
 
 
+/* Global Changes */
 
+a {
+      text-decoration: none;
+}
 
+html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+}
 
 /* Body */
 
 body {
       background-color: var(--body-color);
       background-image: var(--body-back);
-
 }
 
 ::-webkit-scrollbar {
@@ -43,23 +54,81 @@ body {
 }
 
 
+/* Display Off  */
+
+#mov-container {
+      display: none;
+}
 
 
-/* Logo Sections */
+/* Search Section  */
 
-.logo {
-      /*Logo Container*/
+.search-sec {
       width: 100vw;
-      height: 70px;
+      height: 80px;
+      position: sticky;
+      top: 0;
+      background-color: #000;
+      z-index: 100;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.search-sec>* {
+      width: 40px;
+      height: 40px;
+      background-color: var(--main-strip-color);
+      margin-right: 10px;
+}
+
+.s-about {
+      border-radius: 100px;
+      margin-left: 20px;
+      margin-right: 0px;
+      width: 34px;
+      height: 34px;
+
       display: flex;
       justify-content: center;
       align-items: center;
 }
 
-.logo>span {
-      /* logo text  */
-      font-size: 25px;
-      color: var(--logo-txt-color);
+.s-about>img {
+      height: 20px;
+}
+
+.s-filter {
+      border-radius: 100px;
+      margin-right: 8vw;
+      width: 34px;
+      height: 34px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.s-filter>img {
+      height: 18px;
+}
+
+.search {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      width: 60vw;
+      justify-self: end;
+      margin-right: 0px;
+}
+
+
+/* Banner Section  */
+
+.main-banner {
+      width: 100vw;
+      height: 220px;
+      background-color: #000000;
 }
 
 
@@ -72,58 +141,19 @@ body {
       width: 100vw;
       min-height: 100vh;
       background-color: var(--main-color);
-      border-top-left-radius: 30px;
-      border-top-right-radius: 30px;
-      position: sticky;
-      top: 0;
-      box-shadow: 0 -5px 20px -5px rgba(0, 0, 0, 0.164);
 }
 
-.control {
-      /* Navigation Section  */
-      /* border: 2px solid red; */
+.main-strip {
       width: 100vw;
-      height: 80px;
-
-      display: grid;
-      grid-template-columns: 30px 1fr 50px 30px 30px;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-}
-
-/* Grid Arrangement of controls */
-
-
-.search {
-      grid-column: 2/3;
-}
-
-.filter {
-      grid-column: 3/4;
-}
-
-.profile {
-      grid-column: 4/5;
+      height: 10px;
+      background-color: var(--main-strip-color);
+      position: sticky;
+      top: 80px;
+      z-index: 100;
 }
 
 
 
-
-
-
-/* ----------------------------------------------------- */
-
-
-.profile {
-      /* Account Icon  */
-      height: 25px;
-}
-
-.filter {
-      /* Filter Icon  */
-      height: 23px;
-}
 
 .search {
       /* Block element of search */
@@ -135,18 +165,18 @@ body {
 }
 
 #search {
-      width: 95%;
+      width: 55vw;
       height: 33px;
       border: none;
-      border-radius: 100px;
       outline: none;
       padding: 5px 15px;
       padding-left: 35px;
       color: var(--search-txt-color);
       font-family: sans-serif;
       font-weight: 500;
-      font-size: 12.5px;
-      background-color: var(--search-back-color);
+      font-size: 14px;
+      margin-left: 3vw;
+      background-color: var(--main-strip-color);
 }
 
 .search::before {
@@ -158,19 +188,234 @@ body {
       width: 20px;
       background-repeat: no-repeat;
       position: absolute;
-      left: 13px;
+      left: 20px;
 }
 
-.mov-title {
-      font-family: sans-serif;
-      font-size: 13px;
-      /* font-weight: 600; */
-      color: var(--search-txt-color);
-      background-color: var(--mov-title-color);
-      height: 20px;
-      padding: 4px 15px;
+/* Movie Container  */
+
+.mov-container {
+      width: 76vw;
+      margin-left: 12vw;
+      margin-top: 30px;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10vw;
+      grid-row-gap: 10vw;
+}
+
+.mov-item {
+      /* Movie Items Container  */
+}
+
+.item-img {
+      width: 100%;
+      border: 8px solid rgb(212, 212, 212);
+      box-shadow: 0 14px 28px rgba(87, 87, 87, 0.25), 0 10px 10px rgba(87, 87, 87, 0.22);
+}
+
+hr {
+      /* Movie Controls and Container */
+      width: 90vw;
+      margin-left: 5vw;
+      border-top: 0.5px solid rgb(211, 209, 209);
+}
+
+
+
+
+/* Card Flip CSS */
+
+.mov-item {
+      min-height: 49vw;
+      position: relative;
+}
+
+.flip-front,
+.flip-back {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      backface-visibility: hidden;
+      position: absolute;
+      transition: transform .6s linear;
+}
+
+.flip-back {
+      background-color: #D9D9D9;
+      border: 8px solid #CBCBCB;
+      transform: perspective(600px) rotateY(180deg);
+      box-shadow: 0 14px 28px rgba(87, 87, 87, 0.25),
+            0 10px 10px rgba(87, 87, 87, 0.22);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+}
+
+.flip-front {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 14px 28px rgba(87, 87, 87, 0.25),
+            0 10px 10px rgba(87, 87, 87, 0.22);
+}
+
+.mov-item:hover>.flip-front {
+      transform: perspective(600px) rotateY(-180deg);
+}
+
+.mov-item:hover>.flip-back {
+      transform: perspective(600px) rotateY(0deg);
+}
+
+
+
+
+/* Movie Back Flip Content  */
+
+
+.flip-back>* {
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
+
+      width: 85%;
+      font-size: 10px;
+      padding: 10px;
       border-radius: 100px;
+      color: white;
+      font-family: sans-serif;
+}
+
+
+.download {
+      background-color: #00897B;
+}
+
+.play {
+      background-color: #303F9F;
+}
+
+.trailer {
+      background-color: #C62828;
+}
+
+
+
+/* Movies Heading  */
+
+.mov-class {
+      font-family: nun;
+      margin-left: 12vw;
+      margin-top: 50px;
+      font-size: 15px;
+      color: rgb(83, 83, 83);
+}
+
+.mov-des {
+      font-family: nun;
+      margin-left: 12vw;
+      font-size: 9px;
+      color: rgb(128, 128, 128);
+}
+
+
+
+/* Banner Section  */
+
+.main-banner {
+      width: 100vw;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      overflow-x: scroll;
+}
+
+.main-banner>* {
+      height: 120px;
+      display: inline-block;
+      min-width: 200px;
+      margin-left: 8vw;
+      border-radius: 10px;
+      background-color: rgb(179, 42, 42);
+}
+
+
+
+/* Quick stream page  */
+
+.pop-stream {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      z-index: 200;
+      background-color: #1b0418;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+
+      display: none;
+}
+
+.stream-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15vh;
+}
+
+.stream-logo>img {
+      height: 15vw;
+}
+
+.stream-logo>span {
+      font-family: sans-serif;
+      font-size: 15vw;
+      font-weight: 600;
+      margin-left: 10px;
+      color: #f7e44d;
+}
+
+.stream-close {
+      width: 100vw;
+      height: 60px;
+      background-color: #0e010c;
+}
+
+.player {
+      width: 50vw;
+      height: 35px;
+      background-color: #2659b8;
+      margin-bottom: 20px;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 3vw;
+      color: rgb(255, 255, 255);
+      font-family: nun;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.vlc {
+      background-color: #b3601c;
+}
+
+.ru {
+      margin-bottom: 18vh;
+      background-color: #601d58;
+      color: rgb(192, 192, 192);
+}
+
+.stream-close {
+      color: rgb(150, 150, 150);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4.5vw;
 }
