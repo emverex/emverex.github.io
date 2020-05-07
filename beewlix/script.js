@@ -36,7 +36,7 @@ function movlist() {
 
       for (var x in movie) {
             if (m < seqNo) {
-                  document.querySelector('#movie-list').innerHTML += '<div class="mov-item"> <div class="flip-front"> <img class="item-img" src=' + movie[m].img + ' alt=""> </div> <div class="flip-back"> <a class="download" href="' + movie[m].play + '">download</a> <div class="play" onclick="play(&#39;' + movie[m].play + '&#39;)">watch online</div> <a class="trailer" href="' + movie[m].trailer + '">watch trailer</a> </div> </div>';
+                  document.querySelector('#movie-list').innerHTML += '<div class="mov-item"> <div class="flip-front"> <img class="item-img" src=' + movie[m].img + ' alt=""> </div> <div class="flip-back"> <a class="download" onclick="ddown(&#39;' + movie[m].play + '&#39;)">download</a> <div class="play" onclick="play(&#39;' + movie[m].play + '&#39;)">watch online</div> <a class="trailer" href="' + movie[m].trailer + '">watch trailer</a> </div> </div>';
                   m = m + 1;
             }
             if (m == (seqNo - 1)) {
@@ -51,10 +51,14 @@ function movlist() {
 }
 
 
-// Streaming 
+// Streaming and Downloading
 
 function play(plink) {
       document.querySelector('#pstream').style.display = 'flex';
+}
+
+function ddown(dlink) {
+      console.log(dlink + '&f=directdown');
 }
 
 
