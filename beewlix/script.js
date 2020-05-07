@@ -46,7 +46,6 @@ function movlist() {
             if (m == listLen) {
                   break;
             }
-            console.log(m);
       }
 }
 
@@ -55,6 +54,7 @@ function movlist() {
 
 function play(plink) {
       document.querySelector('#pstream').style.display = 'flex';
+      console.log(plink + '&m=streamnow');
 }
 
 function ddown(dlink) {
